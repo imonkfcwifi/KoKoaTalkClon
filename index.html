@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +10,10 @@
 </head>
 
 <body>
-    <div id="status-bar">
+    <div class="status-bar">
         <div class="status-bar__column">
             <span>No sevice</span>
+            <i class="fa-solid fa-wifi"></i>
             <!--Todo wifi icon -->
         </div>
         <div class="status-bar__column">
@@ -19,10 +21,29 @@
         </div>
         <div class="status-bar__column">
             <span>110%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+            <i class="fa-solid fa-bolt"></i>
             <!-- battery icon -->
             <!-- lightning icon -->
         </div>
     </div>
+
+    <header class="welcome-header">
+        <h1 class="welcome-header__title">카카오톡에 오신것을 환영합니다.</h1>
+        <p class="welcome-header__text">카카오톡 아이디가 있다면 로그인 하시길 바랍니다.</p>
+    </header>
+
+    <form id="login-form">
+        <input type="text" placeholder="이메일 혹은 전화번호 입력" />
+        <input type="password" placeholder="비밀번호" />
+        <input type="submit" value="로그인" />
+        <input type="submit" value="회원가입" />
+        <a href="#">아이디/비밀번호 찾기</a>
+    </form>
+
+
+    <script src="https://kit.fontawesome.com/31ea20ca01.js" crossorigin="anonymous"></script>
+    <!-- 스크립트는 항상 마지막에 body태그를 닫기 전에 있어야 함!!! -->
 </body>
 
 </html>
