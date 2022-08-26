@@ -1,7 +1,8 @@
 @import "reset.css";
-@import "components/startus-bar.css";
-/* components */
 @import "variables.css";
+@import "components/startus-bar.css";
+@import "components/nav-bar.css";
+/* components */
 @import "screen/login.css";
 /* screen */
 
