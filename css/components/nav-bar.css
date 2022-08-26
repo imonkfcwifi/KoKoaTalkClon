@@ -5,6 +5,7 @@
     background-color: #f9f9fa;
     padding: 20px 40px;
     box-sizing: border-box;
+    /* magic ; box의 size가 커지는것을 방지한다. */
     border-top: 1px solid rgba(121, 121, 121, 0.2);
 }
 
@@ -14,5 +15,24 @@
 }
 
 .navigation__link {
+    position: relative;
     color: #2e363e;
+}
+
+.navigation__notification {
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    /* span이라 block 해야ㅏ함 */
+    position: absolute;
+    /* 가장가까운 relative를 가진 부모를 기준으로 움직인다
+    가장 가까운 위치에 있는 조상 요소를 기준으로 배치한다. */
+    top: -25px;
+    left: 15px;
 }
