@@ -2,6 +2,7 @@
 @import "variables.css";
 @import "components/startus-bar.css";
 @import "components/nav-bar.css";
+@import "components/screen-header.css";
 /* components */
 @import "screen/login.css";
 /* screen */
