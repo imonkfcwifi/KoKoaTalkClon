@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: var(--horizontal-space);
     margin-top: 15px;
     top: 30px
 }
@@ -14,5 +14,6 @@
 }
 
 .screen-header__icons span {
-    margin-left: 20px;
+    margin-left: 25px;
+    font-weight: 600;
 }
