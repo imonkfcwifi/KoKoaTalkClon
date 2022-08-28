@@ -1,0 +1,125 @@
+.find-icons {
+    display: flex;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.find-icon__icon {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    /* flex direction이 column 이르모 main axis가 세로축으로 바뀜 즉 align items center */
+}
+
+.find-icon__icon i {
+    font-size: 35px;
+}
+
+/* 그냥 .i 라고만 하면 모든 아이콘에 적용이 되므로 제대로 명시해준다. */
+
+.find-icon__icon span {
+    margin-top: 15px;
+}
+
+.recommended-friends {
+    padding: 15px 0px;
+    margin: 25px 0px;
+    border-bottom: var(--line_border-bottom);
+}
+
+.recommendeed-friends__title {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.recommended-friends span {
+    display: block;
+    margin: 110px 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.open-chat__header {
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.8;
+    margin-bottom: 25px;
+}
+
+.open-chat__header span {
+    opacity: 0.6;
+}
+
+.open-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-post__title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.open-post__hashtag {
+    text-transform: uppercase;
+    opacity: 0.6;
+}
+
+.open-post__members {
+    display: flex;
+    align-items: center;
+}
+
+.open-post__members img {
+    margin-top: 7px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 3px;
+    display: flex;
+}
+
+.open-post__members-count {
+    margin: 0px 3px;
+    opacity: 0.5;
+    font-size: 17px;
+    align-items: center;
+}
+
+.open-post__members-count .divider {
+    /* open post members count에 있는 divider에만 적용되는 css이다. */
+    width: 1px;
+    height: 10px;
+    margin: 0px 5px;
+}
+
+.open-post__photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    background-size: contain;
+}
+
+.open-post__photo {
+    position: relative;
+}
+
+.open-post__heart-count {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.open-post__heart-count span {
+    margin-left: 3px;
+}
